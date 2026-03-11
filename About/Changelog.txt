@@ -1,0 +1,17 @@
+# Changelog
+
+All notable changes to this mod will be documented in this file.
+
+## [1.0.0] - 2026-03-11
+
+### Added
+- Joywire implant (permanent mood boost)
+- Super Rifle (CE compatible)
+- Mod icon and preview images
+- GitHub repository
+
+### Fixed
+- Combat Extended packageId
+
+### Changed
+- Updated mod description with LWOP credit
