@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
     <name>Super weapons and armors</name>
-    <author>YourName</author>
-    <packageId>YourName.SuperWeapons</packageId>
+    <author>keventao</author>
+    <packageId>keventao.SuperWeapons</packageId>
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
@@ -15,7 +15,7 @@ Features:
 Requires Combat Extended to function properly.</description>
     <modDependencies>
         <li>
-            <packageId>CombatExtended.CombatExtended</packageId>
+            <packageId>CETeam.CombatExtended</packageId>
             <displayName>Combat Extended</displayName>
             <downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended</downloadUrl>
             <steamWorkshopUrl>steam://url/CommunityFilePage/2882957625</steamWorkshopUrl>
