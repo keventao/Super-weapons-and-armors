@@ -17,7 +17,6 @@
             <Bulk>7.0</Bulk>
             <Mass>4.2</Mass>
             <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-            <MeleeDamageAverage>20</MeleeDamageAverage>
         </statBases>
         <costList>
             <Steel>1</Steel>
