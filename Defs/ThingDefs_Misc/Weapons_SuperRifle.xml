@@ -33,7 +33,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>200</magazineSize>
                 <reloadTime>1</reloadTime>
-                <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+                <ammoSet>AmmoSet_SuperBarrett</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aimedBurstShotCount>3</aimedBurstShotCount>
@@ -45,7 +45,7 @@
             <li Class="CombatExtended.VerbPropertiesCE">
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                <defaultProjectile>Bullet_SuperBarrett</defaultProjectile>
                 <warmupTime>0.6</warmupTime>
                 <range>120</range>
                 <burstShotCount>6</burstShotCount>

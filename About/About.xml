@@ -7,7 +7,7 @@
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
-    <modVersion IgnoreIfNoMatchingField="True">1.0.0</modVersion>
+    <modVersion IgnoreIfNoMatchingField="True">1.1.1</modVersion>
     <description>This mod adds LWOP items with Combat Extended support.
 
 Items in this mod are from LWOP Package (https://steamcommunity.com/sharedfiles/filedetails/?id=2012717312).
@@ -15,6 +15,12 @@ Items in this mod are from LWOP Package (https://steamcommunity.com/sharedfiles/
 Current features:
 - Joywire: Permanent mood boost implant
 - Super Rifle: High-capacity assault rifle (CE compatible)
+- Super Barrett Ammo: Overpowered anti-materiel ammunition for the Super Rifle
+
+Bug fixes:
+- Fixed ammo not loading into weapon
+- Added ammo description and type
+- Fixed bullet textures
 
 Planned features:
 - More LWOP items with CE support

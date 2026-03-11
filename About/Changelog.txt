@@ -2,6 +2,18 @@
 
 All notable changes to this mod will be documented in this file.
 
+## [1.1.1] - 2026-03-12
+
+### Added
+- Super Barrett Ammo: Overpowered anti-materiel ammunition for the Super Rifle
+- Ammo crafting recipe (1 steel = 1000 rounds)
+
+### Fixed
+- Fixed ammo not loading into weapon (changed defaultProjectile)
+- Added missing ammo description and ammoClass
+- Fixed bullet texture path
+- Added missing projectile properties (damageDef, dropsCasings)
+
 ## [1.0.0] - 2026-03-11
 
 ### Added
