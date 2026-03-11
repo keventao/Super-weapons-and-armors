@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <ThingDef ParentName="BaseGun">
+    <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>MyMod_SuperRifle</defName>
         <label>super rifle</label>
         <description>An advanced assault rifle with hyper-velocity rounds.</description>
@@ -9,6 +9,9 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>Ranged</li>
+        </weaponClasses>
         <statBases>
             <WorkToMake>35000</WorkToMake>
             <SightsEfficiency>1.1</SightsEfficiency>
@@ -19,13 +22,14 @@
             <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>1</Steel>
+            <Steel>50</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <weaponTags>
             <li>CE_AI_AssaultWeapon</li>
+            <li>IndustrialAdvanced</li>
         </weaponTags>
         <comps>
-            <li Class="CompProperties_Forbiddable"/>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>200</magazineSize>
                 <reloadTime>1</reloadTime>
@@ -50,6 +54,28 @@
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <armorPenetrationBlunt>2</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2.02</cooldownTime>
+                <armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+            </li>
+        </tools>
         <recipeMaker>
             <researchPrerequisite>Gunsmithing</researchPrerequisite>
             <skillRequirements>
