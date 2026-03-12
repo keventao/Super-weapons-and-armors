@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <!-- ==================== 三级护甲 (Tier 3 Armor) ==================== -->
-    <ThingDef ParentName="ArmorBasicBase">
+    <ThingDef ParentName="ArmorMachineableBase">
         <defName>MyMod_Tier3Armor</defName>
         <label>Tier 3 Armor</label>
-        <description>Elite combat armor with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage. Includes integrated jump pack, firefoam dispenser, and smoke generator.</description>
+        <description>Elite combat armor with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage. Includes integrated firefoam dispenser and smoke generator.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -21,7 +21,6 @@
             <Insulation_Cold>200</Insulation_Cold>
             <Insulation_Heat>200</Insulation_Heat>
             <EquipDelay>0</EquipDelay>
-            <JumpRange>200</JumpRange>
             <PackRadius>4.9</PackRadius>
             <AccuracyTouch>1</AccuracyTouch>
             <AccuracyShort>1</AccuracyShort>
@@ -70,7 +69,7 @@
             <WorkSpeedGlobal>100</WorkSpeedGlobal>
             <CarryingCapacity>200</CarryingCapacity>
         </equippedStatOffsets>
-        <!-- 三合一功能 -->
+        <!-- 功能组件 -->
         <comps>
             <!-- 1) 可充能 -->
             <li Class="CompProperties_ApparelReloadable">
@@ -102,11 +101,7 @@
                 <compClass>CompFirefoamPack</compClass>
                 <checkInterval>10</checkInterval>
             </li>
-            <!-- 3) Jump Pack -->
-            <li Class="CompProperties_JumpPack">
-                <jumpRange>200</jumpRange>
-            </li>
-            <!-- 4) Smokepop -->
+            <!-- 3) Smokepop -->
             <li Class="CompProperties_SmokepopBelt">
                 <radius>4.9</radius>
             </li>

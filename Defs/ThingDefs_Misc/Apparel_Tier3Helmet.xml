@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <!-- ==================== 三级头盔 (Tier 3 Helmet) ==================== -->
-    <ThingDef ParentName="ArmorBasicBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>MyMod_Tier3Helmet</defName>
         <label>Tier 3 Helmet</label>
         <description>Advanced combat helmet with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage.</description>
