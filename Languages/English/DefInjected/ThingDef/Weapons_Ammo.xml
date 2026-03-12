@@ -3,12 +3,12 @@
   <!-- Joywire -->
   <li>
     <defName>MyMod_Joywire</defName>
-    <label>Joywire</label>
+    <label>HappyChip</label>
     <description>Implant permanent happiness stimulation in the brain.</description>
   </li>
   <li>
     <defName>MyMod_InstallJoywire</defName>
-    <label>Install Joywire</label>
+    <label>Install HappyChip</label>
   </li>
   
   <!-- Super Rifle -->
