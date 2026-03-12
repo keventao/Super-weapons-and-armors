@@ -28,6 +28,12 @@
             <li>CE_AI_AssaultWeapon</li>
             <li>IndustrialAdvanced</li>
         </weaponTags>
+        <recipeMaker>
+            <researchPrerequisite>Gunsmithing</researchPrerequisite>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
         <comps>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>200</magazineSize>
