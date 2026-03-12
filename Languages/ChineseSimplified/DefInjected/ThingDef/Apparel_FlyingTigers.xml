@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <li>
+    <defName>MyMod_Tier3Helmet</defName>
+    <label>飞虎队精英头盔</label>
+    <description>飞虎队精英战斗头盔。提供卓越的子弹、钝击和电击防护。采用先进材料制成，实现最大防御。</description>
+  </li>
+  <li>
+    <defName>MyMod_Tier3Armor</defName>
+    <label>飞虎队精英战甲</label>
+    <description>飞虎队精英战斗装甲。提供卓越的子弹、钝击和电击防护。具有出色的机动性和环境抵抗力。</description>
+  </li>
+</LanguageData>
