@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Joywire -->
+  <li>
+    <defName>MyMod_Joywire</defName>
+    <label>Joywire</label>
+    <description>Implant permanent happiness stimulation in the brain.</description>
+  </li>
+  <li>
+    <defName>MyMod_InstallJoywire</defName>
+    <label>Install Joywire</label>
+  </li>
+  
+  <!-- Super Rifle -->
+  <li>
+    <defName>MyMod_SuperRifle</defName>
+    <label>Super Rifle</label>
+    <description>An advanced assault rifle with hyper-velocity rounds.</description>
+  </li>
+  
+  <!-- Super Barrett -->
+  <li>
+    <defName>AmmoSet_SuperBarrett</defName>
+    <label>Super Barrett</label>
+  </li>
+  <li>
+    <defName>Ammo_SuperBarrett</defName>
+    <label>Super Barrett Cartridge</label>
+    <description>Super Barrett ammunition - extremely powerful anti-materiel round.</description>
+  </li>
+  <li>
+    <defName>Bullet_SuperBarrett</defName>
+    <label>Super Barrett Bullet</label>
+  </li>
+  <li>
+    <defName>MakeAmmo_SuperBarrett</defName>
+    <label>Make Super Barrett Cartridge x1000</label>
+  </li>
+</LanguageData>

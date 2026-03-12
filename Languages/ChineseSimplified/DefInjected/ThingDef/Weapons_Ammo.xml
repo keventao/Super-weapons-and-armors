@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Joywire -->
+  <li>
+    <defName>MyMod_Joywire</defName>
+    <label>快感神经束</label>
+    <description>在大脑中植入永久性快乐刺激。</description>
+  </li>
+  <li>
+    <defName>MyMod_InstallJoywire</defName>
+    <label>安装快感神经束</label>
+  </li>
+  
+  <!-- Super Rifle -->
+  <li>
+    <defName>MyMod_SuperRifle</defName>
+    <label>超级步枪</label>
+    <description>配备超高速子弹的高级突击步枪。</description>
+  </li>
+  
+  <!-- Super Barrett -->
+  <li>
+    <defName>AmmoSet_SuperBarrett</defName>
+    <label>超级巴雷特</label>
+  </li>
+  <li>
+    <defName>Ammo_SuperBarrett</defName>
+    <label>超级巴雷特弹药</label>
+    <description>超级巴雷特反器材弹药，极强威力。</description>
+  </li>
+  <li>
+    <defName>Bullet_SuperBarrett</defName>
+    <label>超级巴雷特子弹</label>
+  </li>
+  <li>
+    <defName>MakeAmmo_SuperBarrett</defName>
+    <label>制作超级巴雷特弹药 x1000</label>
+  </li>
+</LanguageData>
