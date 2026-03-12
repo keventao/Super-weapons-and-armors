@@ -2,6 +2,14 @@
 
 All notable changes to this mod will be documented in this file.
 
+## [1.1.2] - 2026-03-12
+
+### Fixed
+- Fixed ammo recipe not showing on loading bench (use CE AmmoRecipeBase)
+- Added workAmount to recipes
+- Added missing recipeMaker properties for Joywire
+- Reduced Super Rifle cost to 1 steel
+
 ## [1.1.1] - 2026-03-12
 
 ### Added
