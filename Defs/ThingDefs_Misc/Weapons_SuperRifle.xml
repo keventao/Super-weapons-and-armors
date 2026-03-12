@@ -37,7 +37,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>200</magazineSize>
-                <reloadTime>1</reloadTime>
+                <reloadTime>3</reloadTime>
                 <ammoSet>AmmoSet_SuperBarrett</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
