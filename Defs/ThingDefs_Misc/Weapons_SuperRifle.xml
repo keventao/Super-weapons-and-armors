@@ -52,9 +52,9 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_SuperBarrett</defaultProjectile>
                 <warmupTime>0.6</warmupTime>
-                <range>120</range>
-                <burstShotCount>6</burstShotCount>
-                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <range>80</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
                 <soundCast>Shot_AssaultRifle</soundCast>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>

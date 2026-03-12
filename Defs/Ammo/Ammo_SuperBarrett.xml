@@ -60,7 +60,7 @@
             <damageAmountBase>66</damageAmountBase>
             <armorPenetrationSharp>80</armorPenetrationSharp>
             <armorPenetrationBlunt>9</armorPenetrationBlunt>
-            <speed>200</speed>
+            <speed>180</speed>
         </projectile>
     </ThingDef>
 
