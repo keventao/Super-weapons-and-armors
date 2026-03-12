@@ -4,7 +4,7 @@
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>MyMod_Tier3Armor</defName>
         <label>Tier 3 Armor</label>
-        <description>Elite combat armor with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage. Includes integrated firefoam dispenser and smoke generator.</description>
+        <description>Elite combat armor with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -21,7 +21,6 @@
             <Insulation_Cold>200</Insulation_Cold>
             <Insulation_Heat>200</Insulation_Heat>
             <EquipDelay>0</EquipDelay>
-            <PackRadius>4.9</PackRadius>
             <AccuracyTouch>1</AccuracyTouch>
             <AccuracyShort>1</AccuracyShort>
             <AccuracyMedium>1</AccuracyMedium>
@@ -69,43 +68,6 @@
             <WorkSpeedGlobal>100</WorkSpeedGlobal>
             <CarryingCapacity>200</CarryingCapacity>
         </equippedStatOffsets>
-        <!-- 功能组件 -->
-        <comps>
-            <!-- 1) 可充能 -->
-            <li Class="CompProperties_ApparelReloadable">
-                <maxCharges>999</maxCharges>
-                <ammoDef>Steel</ammoDef>
-                <ammoCountToRefill>1</ammoCountToRefill>
-                <baseReloadTicks>3</baseReloadTicks>
-                <soundReload>Standard_Reload</soundReload>
-                <hotKey>Misc4</hotKey>
-                <chargeNoun>Multi-function pack</chargeNoun>
-                <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-            </li>
-            <!-- 2) Firefoam 爆破 -->
-            <li Class="CompProperties_Explosive">
-                <explosiveRadius>4.9</explosiveRadius>
-                <explosiveDamageType>Extinguish</explosiveDamageType>
-                <startWickHitPointsPercent>0</startWickHitPointsPercent>
-                <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
-                <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
-                <postExplosionSpawnChance>1</postExplosionSpawnChance>
-                <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
-                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-                <explosionEffect>ExtinguisherExplosion</explosionEffect>
-                <explosionSound>Explosion_FirefoamPopPack</explosionSound>
-                <wickTicks>0</wickTicks>
-                <destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
-            </li>
-            <li Class="CompProperties_AIUSablePack">
-                <compClass>CompFirefoamPack</compClass>
-                <checkInterval>10</checkInterval>
-            </li>
-            <!-- 3) Smokepop -->
-            <li Class="CompProperties_SmokepopBelt">
-                <radius>4.9</radius>
-            </li>
-        </comps>
         <recipeMaker>
             <recipeUsers>
                 <li>FabricationBench</li>
