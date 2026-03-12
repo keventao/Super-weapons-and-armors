@@ -28,6 +28,7 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PlateHelmet/CE_PlateHelmet</wornGraphicPath>
             <tags>
                 <li>IndustrialMilitary</li>
             </tags>

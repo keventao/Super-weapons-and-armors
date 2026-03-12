@@ -43,6 +43,7 @@
             <layers>
                 <li>Shell</li>
             </layers>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CompositeVest/CompositeVest</wornGraphicPath>
             <tags>
                 <li>IndustrialMilitary</li>
             </tags>
