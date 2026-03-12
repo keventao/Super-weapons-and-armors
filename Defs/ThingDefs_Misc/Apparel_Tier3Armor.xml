@@ -3,8 +3,8 @@
     <!-- ==================== 三级护甲 (Tier 3 Armor) ==================== -->
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>MyMod_Tier3Armor</defName>
-        <label>Tier 3 Armor</label>
-        <description>Elite combat armor with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage.</description>
+        <label>Flying Tigers Elite Armor</label>
+        <description>Elite combat armor from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Features superior mobility and environmental resistance.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
