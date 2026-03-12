@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- Joywire -->
-  <li>
-    <defName>MyMod_Joywire</defName>
-    <label>快乐芯片</label>
-    <description>在大脑中植入永久性快乐刺激。</description>
-  </li>
-  <li>
-    <defName>MyMod_InstallJoywire</defName>
-    <label>安装快乐芯片</label>
-  </li>
+  <MyMod_Joywire.label>快乐芯片</MyMod_Joywire.label>
+  <MyMod_Joywire.description>在大脑中植入永久性快乐刺激。</MyMod_Joywire.description>
+  <MyMod_InstallJoywire.label>安装快乐芯片</MyMod_InstallJoywire.label>
   
   <!-- Super Rifle -->
-  <li>
-    <defName>MyMod_SuperRifle</defName>
-    <label>超级步枪</label>
-    <description>配备超高速子弹的高级突击步枪。</description>
-  </li>
+  <MyMod_SuperRifle.label>超级步枪</MyMod_SuperRifle.label>
+  <MyMod_SuperRifle.description>配备超高速子弹的高级突击步枪。</MyMod_SuperRifle.description>
   
   <!-- Super Barrett -->
-  <li>
-    <defName>AmmoSet_SuperBarrett</defName>
-    <label>超级巴雷特</label>
-  </li>
-  <li>
-    <defName>Ammo_SuperBarrett</defName>
-    <label>超级巴雷特弹药</label>
-    <description>超级巴雷特反器材弹药，极强威力。</description>
-  </li>
-  <li>
-    <defName>Bullet_SuperBarrett</defName>
-    <label>超级巴雷特子弹</label>
-  </li>
-  <li>
-    <defName>MakeAmmo_SuperBarrett</defName>
-    <label>制作超级巴雷特弹药 x1000</label>
-  </li>
+  <AmmoSet_SuperBarrett.label>超级巴雷特</AmmoSet_SuperBarrett.label>
+  <Ammo_SuperBarrett.label>超级巴雷特弹药</Ammo_SuperBarrett.label>
+  <Ammo_SuperBarrett.description>超级巴雷特反器材弹药，极强威力。</Ammo_SuperBarrett.description>
+  <Bullet_SuperBarrett.label>超级巴雷特子弹</Bullet_SuperBarrett.label>
+  <MakeAmmo_SuperBarrett.label>制作超级巴雷特弹药 x1000</MakeAmmo_SuperBarrett.label>
 </LanguageData>

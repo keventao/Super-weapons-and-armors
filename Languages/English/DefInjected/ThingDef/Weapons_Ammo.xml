@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- Joywire -->
-  <li>
-    <defName>MyMod_Joywire</defName>
-    <label>HappyChip</label>
-    <description>Implant permanent happiness stimulation in the brain.</description>
-  </li>
-  <li>
-    <defName>MyMod_InstallJoywire</defName>
-    <label>Install HappyChip</label>
-  </li>
+  <MyMod_Joywire.label>HappyChip</MyMod_Joywire.label>
+  <MyMod_Joywire.description>Implant permanent happiness stimulation in the brain.</MyMod_Joywire.description>
+  <MyMod_InstallJoywire.label>Install HappyChip</MyMod_InstallJoywire.label>
   
   <!-- Super Rifle -->
-  <li>
-    <defName>MyMod_SuperRifle</defName>
-    <label>Super Rifle</label>
-    <description>An advanced assault rifle with hyper-velocity rounds.</description>
-  </li>
+  <MyMod_SuperRifle.label>Super Rifle</MyMod_SuperRifle.label>
+  <MyMod_SuperRifle.description>An advanced assault rifle with hyper-velocity rounds.</MyMod_SuperRifle.description>
   
   <!-- Super Barrett -->
-  <li>
-    <defName>AmmoSet_SuperBarrett</defName>
-    <label>Super Barrett</label>
-  </li>
-  <li>
-    <defName>Ammo_SuperBarrett</defName>
-    <label>Super Barrett Cartridge</label>
-    <description>Super Barrett ammunition - extremely powerful anti-materiel round.</description>
-  </li>
-  <li>
-    <defName>Bullet_SuperBarrett</defName>
-    <label>Super Barrett Bullet</label>
-  </li>
-  <li>
-    <defName>MakeAmmo_SuperBarrett</defName>
-    <label>Make Super Barrett Cartridge x1000</label>
-  </li>
+  <AmmoSet_SuperBarrett.label>Super Barrett</AmmoSet_SuperBarrett.label>
+  <Ammo_SuperBarrett.label>Super Barrett Cartridge</Ammo_SuperBarrett.label>
+  <Ammo_SuperBarrett.description>Super Barrett ammunition - extremely powerful anti-materiel round.</Ammo_SuperBarrett.description>
+  <Bullet_SuperBarrett.label>Super Barrett Bullet</Bullet_SuperBarrett.label>
+  <MakeAmmo_SuperBarrett.label>Make Super Barrett Cartridge x1000</MakeAmmo_SuperBarrett.label>
 </LanguageData>

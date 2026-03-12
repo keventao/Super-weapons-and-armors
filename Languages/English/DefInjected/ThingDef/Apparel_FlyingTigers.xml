@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <li>
-    <defName>MyMod_Tier3Helmet</defName>
-    <label>Flying Tigers Elite Helmet</label>
-    <description>Elite combat helmet from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Enhanced with advanced materials for maximum defense.</description>
-  </li>
-  <li>
-    <defName>MyMod_Tier3Armor</defName>
-    <label>Flying Tigers Elite Armor</label>
-    <description>Elite combat armor from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Features superior mobility and environmental resistance.</description>
-  </li>
+  <MyMod_Tier3Helmet.label>Flying Tigers Elite Helmet</MyMod_Tier3Helmet.label>
+  <MyMod_Tier3Helmet.description>Elite combat helmet from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Enhanced with advanced materials for maximum defense.</MyMod_Tier3Helmet.description>
+  <MyMod_Tier3Armor.label>Flying Tigers Elite Armor</MyMod_Tier3Armor.label>
+  <MyMod_Tier3Armor.description>Elite combat armor from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Features superior mobility and environmental resistance.</MyMod_Tier3Armor.description>
 </LanguageData>
