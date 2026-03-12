@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- ==================== 三级头盔 (Tier 3 Helmet) ==================== -->
+    <ThingDef ParentName="ArmorBasicBase">
+        <defName>MyMod_Tier3Helmet</defName>
+        <label>Tier 3 Helmet</label>
+        <description>Advanced combat helmet with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>100</ArmorRating_Sharp>
+            <ArmorRating_Blunt>100</ArmorRating_Blunt>
+            <ArmorRating_Electric>100</ArmorRating_Electric>
+            <EquipDelay>0</EquipDelay>
+        </statBases>
+        <costList>
+            <Steel>1</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialMilitary</li>
+            </tags>
+        </apparel>
+        <equippedStatOffsets>
+            <ResearchSpeedFactor>2000</ResearchSpeedFactor>
+            <GlobalLearningFactor>2000</GlobalLearningFactor>
+            <HackingSpeed>2000</HackingSpeed>
+            <PruningSpeed>2000</PruningSpeed>
+            <NegotiationAbility>100</NegotiationAbility>
+            <TradePriceImprovement>100</TradePriceImprovement>
+            <SocialImpact>100</SocialImpact>
+            <ConversionPower>100</ConversionPower>
+            <ArrestSuccessChance>100</ArrestSuccessChance>
+            <SuppressionPower>100</SuppressionPower>
+            <TameAnimalChance>100</TameAnimalChance>
+            <TrainAnimalChance>100</TrainAnimalChance>
+            <BondAnimalChanceFactor>100</BondAnimalChanceFactor>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FabricationBench</li>
+                <li>TableMachining</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+</Defs>

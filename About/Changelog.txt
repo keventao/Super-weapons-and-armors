@@ -2,6 +2,15 @@
 
 All notable changes to this mod will be documented in this file.
 
+## [1.1.3] - 2026-03-12
+
+### Added
+- Tier 3 Helmet: Elite head protection (100 Sharp/Blunt/Electric armor)
+- Tier 3 Armor: Elite combat armor with integrated Jump Pack, Firefoam, and Smoke Generator
+
+### Changed
+- Helmet and Armor attributes balanced to 20% of original LWOP values
+
 ## [1.1.2] - 2026-03-12
 
 ### Fixed

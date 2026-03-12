@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- ==================== 三级护甲 (Tier 3 Armor) ==================== -->
+    <ThingDef ParentName="ArmorBasicBase">
+        <defName>MyMod_Tier3Armor</defName>
+        <label>Tier 3 Armor</label>
+        <description>Elite combat armor with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage. Includes integrated jump pack, firefoam dispenser, and smoke generator.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>2000</WorkToMake>
+            <MaxHitPoints>4000</MaxHitPoints>
+            <Mass>50</Mass>
+            <Flammability>0</Flammability>
+            <ArmorRating_Sharp>100</ArmorRating_Sharp>
+            <ArmorRating_Blunt>100</ArmorRating_Blunt>
+            <ArmorRating_Electric>100</ArmorRating_Electric>
+            <Insulation_Cold>200</Insulation_Cold>
+            <Insulation_Heat>200</Insulation_Heat>
+            <EquipDelay>0</EquipDelay>
+            <JumpRange>200</JumpRange>
+            <PackRadius>4.9</PackRadius>
+            <AccuracyTouch>1</AccuracyTouch>
+            <AccuracyShort>1</AccuracyShort>
+            <AccuracyMedium>1</AccuracyMedium>
+            <AccuracyLong>1</AccuracyLong>
+            <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <costList>
+            <Steel>1</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Hands</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>IndustrialMilitary</li>
+            </tags>
+        </apparel>
+        <equippedStatOffsets>
+            <!-- Biotech 相关 -->
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">200</VacuumResistance>
+            <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">200</ToxicEnvironmentResistance>
+            <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">3</MechControlGroups>
+            <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">200</MechBandwidth>
+            <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">2000</WorkSpeedGlobalOffsetMech>
+            <MechRemoteRepairDistance MayRequire="Ludeon.RimWorld.Biotech">2000</MechRemoteRepairDistance>
+            <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">2000</MechFormingSpeed>
+            <MechRemoteShieldDistance MayRequire="Ludeon.RimWorld.Biotech">2000</MechRemoteShieldDistance>
+            <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">2000</MechRemoteShieldEnergy>
+            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">2000</MechRepairSpeed>
+            <!-- Royalty 相关 -->
+            <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">2000</PsychicEntropyRecoveryRate>
+            <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">2000</MeditationFocusGain>
+            <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">2000</PsychicEntropyMax>
+            <!-- 通用加成 -->
+            <MoveSpeed>6000</MoveSpeed>
+            <WorkSpeedGlobal>100</WorkSpeedGlobal>
+            <CarryingCapacity>200</CarryingCapacity>
+        </equippedStatOffsets>
+        <!-- 三合一功能 -->
+        <comps>
+            <!-- 1) 可充能 -->
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>999</maxCharges>
+                <ammoDef>Steel</ammoDef>
+                <ammoCountToRefill>1</ammoCountToRefill>
+                <baseReloadTicks>3</baseReloadTicks>
+                <soundReload>Standard_Reload</soundReload>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>Multi-function pack</chargeNoun>
+                <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+            </li>
+            <!-- 2) Firefoam 爆破 -->
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>4.9</explosiveRadius>
+                <explosiveDamageType>Extinguish</explosiveDamageType>
+                <startWickHitPointsPercent>0</startWickHitPointsPercent>
+                <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+                <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+                <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                <explosionEffect>ExtinguisherExplosion</explosionEffect>
+                <explosionSound>Explosion_FirefoamPopPack</explosionSound>
+                <wickTicks>0</wickTicks>
+                <destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>
+            </li>
+            <li Class="CompProperties_AIUSablePack">
+                <compClass>CompFirefoamPack</compClass>
+                <checkInterval>10</checkInterval>
+            </li>
+            <!-- 3) Jump Pack -->
+            <li Class="CompProperties_JumpPack">
+                <jumpRange>200</jumpRange>
+            </li>
+            <!-- 4) Smokepop -->
+            <li Class="CompProperties_SmokepopBelt">
+                <radius>4.9</radius>
+            </li>
+        </comps>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FabricationBench</li>
+                <li>TableMachining</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+</Defs>
