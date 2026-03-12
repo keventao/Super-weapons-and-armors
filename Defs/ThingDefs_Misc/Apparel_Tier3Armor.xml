@@ -50,9 +50,6 @@
                 <li>Soldier</li>
             </defaultOutfitTags>
         </apparel>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <equippedStatOffsets>
             <!-- Biotech 相关 -->
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">40</VacuumResistance>
