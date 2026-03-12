@@ -38,7 +38,15 @@
         <costList>
             <Steel>1</Steel>
         </costList>
-        <recipeMaker>
+    <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>0</Crafting>
+            </skillRequirements>
             <recipeUsers>
                 <li>FabricationBench</li>
                 <li>TableMachining</li>
