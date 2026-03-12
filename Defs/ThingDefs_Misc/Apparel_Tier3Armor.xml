@@ -6,7 +6,7 @@
         <label>Tier 3 Armor</label>
         <description>Elite combat armor with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage.</description>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/CompositeVest/CompositeVest</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <techLevel>Spacer</techLevel>
@@ -43,7 +43,7 @@
             <layers>
                 <li>Shell</li>
             </layers>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CompositeVest/CompositeVest</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
             <tags>
                 <li>IndustrialMilitary</li>
             </tags>
