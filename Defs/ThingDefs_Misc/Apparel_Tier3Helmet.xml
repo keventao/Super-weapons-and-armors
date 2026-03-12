@@ -6,16 +6,16 @@
         <label>Tier 3 Helmet</label>
         <description>Advanced combat helmet with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage.</description>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/PlateHelmet/CE_PlateHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <techLevel>Spacer</techLevel>
         <statBases>
             <WorkToMake>1000</WorkToMake>
-            <Mass>5</Mass>
-            <ArmorRating_Sharp>100</ArmorRating_Sharp>
-            <ArmorRating_Blunt>100</ArmorRating_Blunt>
-            <ArmorRating_Electric>100</ArmorRating_Electric>
+            <Mass>1</Mass>
+            <ArmorRating_Sharp>200</ArmorRating_Sharp>
+            <ArmorRating_Blunt>200</ArmorRating_Blunt>
+            <ArmorRating_Electric>33</ArmorRating_Electric>
             <EquipDelay>0</EquipDelay>
         </statBases>
         <costList>
@@ -33,19 +33,19 @@
             </tags>
         </apparel>
         <equippedStatOffsets>
-            <ResearchSpeedFactor>2000</ResearchSpeedFactor>
-            <GlobalLearningFactor>2000</GlobalLearningFactor>
-            <HackingSpeed>2000</HackingSpeed>
-            <PruningSpeed>2000</PruningSpeed>
-            <NegotiationAbility>100</NegotiationAbility>
-            <TradePriceImprovement>100</TradePriceImprovement>
-            <SocialImpact>100</SocialImpact>
-            <ConversionPower>100</ConversionPower>
-            <ArrestSuccessChance>100</ArrestSuccessChance>
-            <SuppressionPower>100</SuppressionPower>
-            <TameAnimalChance>100</TameAnimalChance>
-            <TrainAnimalChance>100</TrainAnimalChance>
-            <BondAnimalChanceFactor>100</BondAnimalChanceFactor>
+            <ResearchSpeedFactor>400</ResearchSpeedFactor>
+            <GlobalLearningFactor>400</GlobalLearningFactor>
+            <HackingSpeed>400</HackingSpeed>
+            <PruningSpeed>400</PruningSpeed>
+            <NegotiationAbility>20</NegotiationAbility>
+            <TradePriceImprovement>20</TradePriceImprovement>
+            <SocialImpact>20</SocialImpact>
+            <ConversionPower>20</ConversionPower>
+            <ArrestSuccessChance>20</ArrestSuccessChance>
+            <SuppressionPower>20</SuppressionPower>
+            <TameAnimalChance>20</TameAnimalChance>
+            <TrainAnimalChance>20</TrainAnimalChance>
+            <BondAnimalChanceFactor>20</BondAnimalChanceFactor>
         </equippedStatOffsets>
         <recipeMaker>
             <recipeUsers>

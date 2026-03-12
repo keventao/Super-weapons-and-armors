@@ -6,18 +6,18 @@
         <label>Tier 3 Armor</label>
         <description>Elite combat armor with exceptional protection. Provides defense against bullets, blunt attacks, and electrical damage.</description>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/CompositeVest/CompositeVest</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <techLevel>Spacer</techLevel>
         <statBases>
             <WorkToMake>2000</WorkToMake>
             <MaxHitPoints>4000</MaxHitPoints>
-            <Mass>50</Mass>
+            <Mass>1</Mass>
             <Flammability>0</Flammability>
-            <ArmorRating_Sharp>100</ArmorRating_Sharp>
-            <ArmorRating_Blunt>100</ArmorRating_Blunt>
-            <ArmorRating_Electric>100</ArmorRating_Electric>
+            <ArmorRating_Sharp>200</ArmorRating_Sharp>
+            <ArmorRating_Blunt>200</ArmorRating_Blunt>
+            <ArmorRating_Electric>33</ArmorRating_Electric>
             <Insulation_Cold>200</Insulation_Cold>
             <Insulation_Heat>200</Insulation_Heat>
             <EquipDelay>0</EquipDelay>
@@ -49,24 +49,24 @@
         </apparel>
         <equippedStatOffsets>
             <!-- Biotech 相关 -->
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">200</VacuumResistance>
-            <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">200</ToxicEnvironmentResistance>
-            <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">3</MechControlGroups>
-            <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">200</MechBandwidth>
-            <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">2000</WorkSpeedGlobalOffsetMech>
-            <MechRemoteRepairDistance MayRequire="Ludeon.RimWorld.Biotech">2000</MechRemoteRepairDistance>
-            <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">2000</MechFormingSpeed>
-            <MechRemoteShieldDistance MayRequire="Ludeon.RimWorld.Biotech">2000</MechRemoteShieldDistance>
-            <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">2000</MechRemoteShieldEnergy>
-            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">2000</MechRepairSpeed>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">40</VacuumResistance>
+            <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">40</ToxicEnvironmentResistance>
+            <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">1</MechControlGroups>
+            <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">40</MechBandwidth>
+            <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">400</WorkSpeedGlobalOffsetMech>
+            <MechRemoteRepairDistance MayRequire="Ludeon.RimWorld.Biotech">400</MechRemoteRepairDistance>
+            <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">400</MechFormingSpeed>
+            <MechRemoteShieldDistance MayRequire="Ludeon.RimWorld.Biotech">400</MechRemoteShieldDistance>
+            <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">400</MechRemoteShieldEnergy>
+            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">400</MechRepairSpeed>
             <!-- Royalty 相关 -->
-            <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">2000</PsychicEntropyRecoveryRate>
-            <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">2000</MeditationFocusGain>
-            <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">2000</PsychicEntropyMax>
+            <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">400</PsychicEntropyRecoveryRate>
+            <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">400</MeditationFocusGain>
+            <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">400</PsychicEntropyMax>
             <!-- 通用加成 -->
-            <MoveSpeed>6000</MoveSpeed>
-            <WorkSpeedGlobal>100</WorkSpeedGlobal>
-            <CarryingCapacity>200</CarryingCapacity>
+            <MoveSpeed>1200</MoveSpeed>
+            <WorkSpeedGlobal>20</WorkSpeedGlobal>
+            <CarryingCapacity>40</CarryingCapacity>
         </equippedStatOffsets>
         <recipeMaker>
             <recipeUsers>
