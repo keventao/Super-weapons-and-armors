@@ -5,8 +5,8 @@ All notable changes to this mod will be documented in this file.
 ## [1.2.0] - 2026-03-12
 
 ### Added
-- Tier 3 Helmet: Elite head protection (100 Sharp/Blunt/Electric armor)
-- Tier 3 Armor: Elite combat armor with integrated Jump Pack, Firefoam, and Smoke Generator
+- Flying Tigers Elite Helmet: Elite head protection (200 Sharp/Blunt, 3 Electric armor)
+- Flying Tigers Elite Armor: Elite combat armor (200 Sharp/Blunt, 33 Electric armor)
 
 ### Changed
 - Helmet and Armor attributes balanced to 20% of original LWOP values
