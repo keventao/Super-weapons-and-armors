@@ -6,8 +6,8 @@
   <MyMod_InstallJoywire.label>安装快乐芯片</MyMod_InstallJoywire.label>
   
   <!-- Super Rifle -->
-  <MyMod_SuperRifle.label>超级步枪</MyMod_SuperRifle.label>
-  <MyMod_SuperRifle.description>配备超高速子弹的高级突击步枪。</MyMod_SuperRifle.description>
+  <MyMod_SuperRifle.label>飞虎队超级步枪</MyMod_SuperRifle.label>
+  <MyMod_SuperRifle.description>采用7.62x39mm苏联步枪弹的先进突击步枪，具有高精度和高可靠性。</MyMod_SuperRifle.description>
   
   <!-- Super Barrett -->
   <AmmoSet_SuperBarrett.label>超级巴雷特</AmmoSet_SuperBarrett.label>

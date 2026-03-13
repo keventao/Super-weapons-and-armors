@@ -51,6 +51,9 @@
             </defaultOutfitTags>
         </apparel>
         <equippedStatOffsets>
+            <!-- 携带能力 -->
+            <CarryBulk>200</CarryBulk>
+            <CarryWeight>200</CarryWeight>
             <!-- Biotech 相关 -->
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">40</VacuumResistance>
             <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">40</ToxicEnvironmentResistance>
