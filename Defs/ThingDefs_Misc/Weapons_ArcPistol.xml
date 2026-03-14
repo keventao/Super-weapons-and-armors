@@ -36,9 +36,6 @@
         <burstShotCount>1</burstShotCount>
         <soundCast>ElectricSmash</soundCast>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
       </li>
     </verbs>
     <recipeMaker>
@@ -69,8 +66,8 @@
     </comps>
   </ThingDef>
 
-  <!-- ========== Arc Bolt Projectile ========== -->
-  <ProjectileDef>
+  <!-- ========== Arc Bolt Projectile (as ThingDef) ========== -->
+  <ThingDef ParentName="BaseBullet">
     <defName>Bullet_ArcBolt</defName>
     <label>闪电戟电弧</label>
     <projectileSpread>0</projectileSpread>
@@ -83,13 +80,12 @@
     <thingClass>Projectile_Explosive</thingClass>
     <damageDef>ArcDamage</damageDef>
     <damageAmountBase>30</damageAmountBase>
-    <armorPenetrationBase>0.5</armorPenetrationBase>
     <speed>50</speed>
     <soundHitThickRoof>ArtilleryShell_Hit</soundHitThickRoof>
     <soundImpact>Impact_Electric</soundImpact>
     <arcHeight>0.4</arcHeight>
     <arcViewFactor>1.5</arcViewFactor>
-  </ProjectileDef>
+  </ThingDef>
 
   <!-- ========== Arc Damage Type ========== -->
   <DamageDef>
@@ -98,7 +94,6 @@
     <deathMessage>{0}被电弧烧焦致死</deathMessage>
     <hediff>ArcBurn</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <impactSoundDef>Impact_Electric</impactSoundDef>
     <externalViolence>true</externalViolence>
   </DamageDef>
 
@@ -127,9 +122,6 @@
       <averageSeverityPerDamage>1</averageSeverityPerDamage>
       <bleedThreshold>3</bleedThreshold>
       <canDeath>true</canDeath>
-      <permanentAeDamageStat>
-        <Injury>ArcScar</Injury>
-      </permanentAeDamageStat>
     </injuryProps>
   </HediffDef>
 
