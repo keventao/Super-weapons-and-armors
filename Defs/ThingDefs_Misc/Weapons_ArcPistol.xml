@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ========== Arc Pistol ========== -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>ArcPistol</defName>
+    <label>闪电戟 Arc Pistol</label>
+    <description>通过充能释放连锁闪电的电弧手枪。击中一个敌人后，闪电会弹射到周围的其他敌人。无需弹药，但需要充能时间。</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Equipment/ArcPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>200</WorkToMake>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Neolithic</li>
+      <li>GunSingleUse</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ArcBolt</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>25</range>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ElectricSmash</soundCast>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>5</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    
+    <!-- Combat Extended Support -->
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_ArcBolt</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <rapidFire>false</rapidFire>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ========== Arc Bolt Projectile ========== -->
+  <ProjectileDef>
+    <defName>Bullet_ArcBolt</defName>
+    <label>闪电戟电弧</label>
+    <projectileSpread>0</projectileSpread>
+    <projectileSize>0.5</projectileSize>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Bolt</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <damageDef>ArcDamage</damageDef>
+    <damageAmountBase>30</damageAmountBase>
+    <armorPenetrationBase>0.5</armorPenetrationBase>
+    <speed>50</speed>
+    <soundHitThickRoof>ArtilleryShell_Hit</soundHitThickRoof>
+    <soundImpact>Impact_Electric</soundImpact>
+    <arcHeight>0.4</arcHeight>
+    <arcViewFactor>1.5</arcViewFactor>
+  </ProjectileDef>
+
+  <!-- ========== Arc Damage Type ========== -->
+  <DamageDef>
+    <defName>ArcDamage</defName>
+    <label>电弧伤害</label>
+    <deathMessage>{0}被电弧烧焦致死</deathMessage>
+    <hediff>ArcBurn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundDef>Impact_Electric</impactSoundDef>
+    <externalViolence>true</externalViolence>
+  </DamageDef>
+
+  <!-- ========== Arc Burn Hediff ========== -->
+  <HediffDef>
+    <defName>ArcBurn</defName>
+    <label>电弧灼伤</label>
+    <description>电弧造成的严重灼伤</description>
+    <hediffClass>Hediff_Injury</hediffClass>
+    <damageEffecter>Bullet_BurnEffect</damageEffecter>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>已包扎</labelTendedWell>
+        <labelTendedWellInner>已初步处理</labelTendedWellInner>
+        <tendDuration>300</tendDuration>
+        <severityPerDayHeal>-1</severityPerDayHeal>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>电弧疤痕</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <damagePerDamageTotal>1</damagePerDamageTotal>
+      <minDamageToFragment>5</minDamageToFragment>
+      <averageSeverityPerDamage>1</averageSeverityPerDamage>
+      <bleedThreshold>3</bleedThreshold>
+      <canDeath>true</canDeath>
+      <permanentAeDamageStat>
+        <Injury>ArcScar</Injury>
+      </permanentAeDamageStat>
+    </injuryProps>
+  </HediffDef>
+
+  <!-- ========== Arc Bolt Ammo Set (CE) ========== -->
+  <AmmoSetDef>
+    <defName>AmmoSet_ArcBolt</defName>
+    <label>电弧弹药</label>
+    <ammoTypes>
+      <li>Ammo_ArcBolt</li>
+    </ammoTypes>
+  </AmmoSetDef>
+
+  <!-- ========== Arc Bolt Ammo (CE) ========== -->
+  <AmmoDef>
+    <defName>Ammo_ArcBolt</defName>
+    <label>电弧电池</label>
+    <description>充能电弧电池，用于闪电戟手枪。</description>
+    <shortHashIdentifier>27_ArcBolt</shortHashIdentifier>
+    <graphicData>
+      <texPath>Things/Item/Ammo/ChargeCell</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <Bulk>0.1</Bulk>
+    </statBases>
+    <thingCategories>
+      <li>AmmoArcBolt</li>
+    </thingCategories>
+    <tradeTags>
+      <li>CE_Ammo</li>
+      <li>Exotic</li>
+    </tradeTags>
+    <thingClass>CombatExtended.AmmoThing</thingClass>
+    <cookOffFlashScale>0</cookOffFlashScale>
+    <cookOffSound>CookOff</cookOffSound>
+  </AmmoDef>
+
+  <!-- ========== Ammo Category ========== -->
+  <ThingCategoryDef>
+    <defName>AmmoArcBolt</defName>
+    <label>电弧弹药</label>
+    <parent>Ammo</parent>
+  </ThingCategoryDef>
+
+</Defs>

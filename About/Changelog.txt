@@ -2,6 +2,15 @@
 
 All notable changes to this mod will be documented in this file.
 
+## [1.3.0] - 2026-03-14
+
+### Added
+- Arc Pistol: Chain lightning pistol (闪电戟)
+  - Neolithic tech level (初期可用)
+  - 25 射程，30 伤害，1.5s 充能
+  - Combat Extended 支持
+  - 需要 5 钢 + 1 组件制作
+
 ## [1.2.0] - 2026-03-12
 
 ### Added
