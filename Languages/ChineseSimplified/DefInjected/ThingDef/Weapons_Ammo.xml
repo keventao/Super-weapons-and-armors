@@ -15,4 +15,8 @@
   <Ammo_SuperBarrett.description>超级巴雷特反器材弹药，极强威力。</Ammo_SuperBarrett.description>
   <Bullet_SuperBarrett.label>超级巴雷特子弹</Bullet_SuperBarrett.label>
   <MakeAmmo_SuperBarrett.label>制作超级巴雷特弹药 x1000</MakeAmmo_SuperBarrett.label>
+
+  <!-- FT Super Rifle -->
+  <FT_SuperRifle.label>飞虎队超级步枪</FT_SuperRifle.label>
+  <FT_SuperRifle.description>实验性定向能量武器，发射超级等离子 bolts。无限弹药容量。</FT_SuperRifle.description>
 </LanguageData>

@@ -14,5 +14,5 @@
   <Ammo_SuperBarrett.label>Super Barrett Cartridge</Ammo_SuperBarrett.label>
   <Ammo_SuperBarrett.description>Super Barrett ammunition - extremely powerful anti-materiel round.</Ammo_SuperBarrett.description>
   <Bullet_SuperBarrett.label>Super Barrett Bullet</Bullet_SuperBarrett.label>
-  <MakeAmmo_SuperBarrett.label>Make Super Barrett Cartridge x1000</MakeAmmo_SuperBarrett.label>
-</LanguageData>
+  <FT_SuperRifle.label>Flying Tigers Super Rifle</FT_SuperRifle.label>
+  <FT_SuperRifle.description>An experimental directed energy weapon that fires supercharged plasma bolts. Infinite ammo capacity.</FT_SuperRifle.description>
