@@ -32,6 +32,7 @@
             <tags>
                 <li>IndustrialMilitary</li>
             </tags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
         </apparel>
         <equippedStatOffsets>
             <ResearchSpeedFactor>40</ResearchSpeedFactor>

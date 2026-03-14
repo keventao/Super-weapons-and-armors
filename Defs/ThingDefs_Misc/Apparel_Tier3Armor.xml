@@ -54,6 +54,7 @@
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
         </apparel>
         <equippedStatOffsets>
             <!-- 携带能力 -->
