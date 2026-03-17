@@ -10,7 +10,7 @@
         <descriptionHyperlinks><ThingDef>MyMod_HyperVitalityChip</ThingDef></descriptionHyperlinks>
         <stages>
             <li>
-                <restFallFactorOffset>-0.6</restFallFactorOffset>
+                <restFallFactorOffset>-0.75</restFallFactorOffset>
             </li>
         </stages>
         <spawnThingOnRemoved>MyMod_HyperVitalityChip</spawnThingOnRemoved>
