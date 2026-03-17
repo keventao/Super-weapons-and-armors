@@ -9,6 +9,7 @@ All notable changes to this mod will be documented in this file.
 
 ### Changed
 - Adjusted HyperVitality Chip restFallFactor from -2 to -0.75 (2h sleep)
+- Added ArmorRating_Heat:10 to Flying Tigers helmet and armor (thermal protection)
 
 ## [1.2.0] - 2026-03-12
 
