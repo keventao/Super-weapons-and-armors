@@ -7,17 +7,18 @@
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
-    <modVersion IgnoreIfNoMatchingField="True">1.2.0</modVersion>
+    <modVersion IgnoreIfNoMatchingField="True">1.2.1</modVersion>
     <description>This mod adds LWOP items with Combat Extended support.
 
 Items in this mod are from LWOP Package (https://steamcommunity.com/sharedfiles/filedetails/?id=2012717312).
 
 Current features:
 - Joywire: Permanent mood boost implant
+- HyperVitality Chip: Neural implant that reduces sleep need to 2 hours per day
 - Super Rifle: High-capacity assault rifle (CE compatible)
 - Super Barrett Ammo: Overpowered anti-materiel ammunition for the Super Rifle
-- Flying Tigers Elite Helmet: Elite head protection (200 Sharp/Blunt, 3 Electric armor)
-- Flying Tigers Elite Armor: Elite combat armor (200 Sharp/Blunt, 33 Electric armor)
+- Flying Tigers Elite Helmet: Elite head protection (200 Sharp/Blunt, 3 Electric armor, 10 Heat armor)
+- Flying Tigers Elite Armor: Elite combat armor (200 Sharp/Blunt, 33 Electric armor, 10 Heat armor)
 
 Bug fixes:
 - Fixed ammo not loading into weapon
