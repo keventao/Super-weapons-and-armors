@@ -18,12 +18,11 @@ This mod is based on [LWOP Package](https://steamcommunity.com/sharedfiles/filed
 
 ### Implants
 - **Joywire**: Neural implant that provides permanent mood boost
+- **HyperVitality Chip**: Neural implant that reduces sleep need to ~2 hours per day
 
-## Planned Features
-
-- More LWOP items with CE support
-- Balance adjustments
-- New content
+### Armor
+- **Flying Tigers Elite Helmet**: Elite head protection
+- **Flying Tigers Elite Armor**: Elite combat armor
 
 ## Installation
 
@@ -31,12 +30,15 @@ This mod is based on [LWOP Package](https://steamcommunity.com/sharedfiles/filed
 2. Subscribe to this mod on Steam
 3. Enable both mods in RimWorld (Combat Extended must load before this mod)
 
-## Manual Installation
+## CE vs Vanilla
 
-Copy this folder to your RimWorld mods directory:
-```
-<Steam>/steamapps/common/RimWorld/RimWorldMac.app/Mods/
-```
+| Feature | CE Version | Vanilla Version |
+|---------|-----------|----------------|
+| Combat Extended required | Yes | No |
+| Projectile | CE Bullet_ChargeRifle | Vanilla native |
+| defNames | No suffix | _Vanilla suffix |
+
+**If you play WITHOUT Combat Extended**, use "Super weapons and armors Vanilla" instead.
 
 ## License
 

@@ -2,6 +2,16 @@
 
 All notable changes to this mod will be documented in this file.
 
+## [1.3.0] - 2026-03-22
+
+### Changed
+- Split mod into CE and Vanilla versions
+- CE version: requires Combat Extended, uses Bullet_ChargeRifle
+- Vanilla version: standalone, no CE dependency, uses native projectile
+- Updated all stat fields to match LWOP best practices
+- Armor and helmet: add JumpRange, PackRadius, PsychicEntropyGain, full Royalty stats
+- Helmet: add VacuumResistance=100, ToxicEnvironmentResistance=99, Royalty entropy stats
+
 ## [1.2.1] - 2026-03-17
 
 ### Added
@@ -14,42 +24,33 @@ All notable changes to this mod will be documented in this file.
 ## [1.2.0] - 2026-03-12
 
 ### Added
-- Flying Tigers Elite Helmet: Elite head protection (200 Sharp/Blunt, 3 Electric armor)
-- Flying Tigers Elite Armor: Elite combat armor (200 Sharp/Blunt, 33 Electric armor)
+- Flying Tigers Elite Helmet: Elite head protection (200 Sharp/Blunt)
+- Flying Tigers Elite Armor: Elite combat armor (200 Sharp/Blunt)
 
 ### Changed
-- Helmet and Armor attributes balanced to 20% of original LWOP values
+- Helmet and Armor attributes balanced
 
 ## [1.1.2] - 2026-03-12
 
 ### Fixed
-- Fixed ammo recipe not showing on loading bench (use CE AmmoRecipeBase)
+- Fixed ammo recipe not showing on loading bench
 - Added workAmount to recipes
-- Added missing recipeMaker properties for Joywire
 - Reduced Super Rifle cost to 1 steel
 
 ## [1.1.1] - 2026-03-12
 
 ### Added
-- Super Barrett Ammo: Overpowered anti-materiel ammunition for the Super Rifle
-- Ammo crafting recipe (1 steel = 1000 rounds)
+- Super Barrett Ammo: Overpowered anti-materiel ammunition
+- Ammo crafting recipe
 
 ### Fixed
-- Fixed ammo not loading into weapon (changed defaultProjectile)
-- Added missing ammo description and ammoClass
+- Fixed ammo not loading into weapon
 - Fixed bullet texture path
-- Added missing projectile properties (damageDef, dropsCasings)
 
 ## [1.0.0] - 2026-03-11
 
 ### Added
-- Joywire implant (permanent mood boost)
+- Joywire implant
 - Super Rifle (CE compatible)
 - Mod icon and preview images
 - GitHub repository
-
-### Fixed
-- Combat Extended packageId
-
-### Changed
-- Updated mod description with LWOP credit
