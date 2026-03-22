@@ -18,7 +18,6 @@
             <Flammability>0</Flammability>
             <ArmorRating_Sharp>200</ArmorRating_Sharp>
             <ArmorRating_Blunt>200</ArmorRating_Blunt>
-            <ArmorRating_Electric>33</ArmorRating_Electric>
             <ArmorRating_Heat>10</ArmorRating_Heat>
             <Insulation_Cold>200</Insulation_Cold>
             <EquipDelay>0</EquipDelay>
@@ -56,8 +55,7 @@
         </apparel>
         <equippedStatOffsets>
             <!-- 携带能力 -->
-            <CarryBulk>200</CarryBulk>
-            <CarryWeight>200</CarryWeight>
+            <CarryingCapacity>40</CarryingCapacity>
             <!-- Biotech 相关 -->
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">40</VacuumResistance>
             <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">40</ToxicEnvironmentResistance>
