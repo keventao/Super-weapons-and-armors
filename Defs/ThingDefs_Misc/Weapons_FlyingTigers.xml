@@ -5,6 +5,10 @@
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_FlyingTigersPlasma</defName>
     <label>plasma bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>40</damageAmountBase>
@@ -19,11 +23,13 @@
     <label>Flying Tigers Super Rifle</label>
     <description>An experimental directed energy weapon that fires supercharged plasma bolts. (Vanilla version)</description>
     <techLevel>Spacer</techLevel>
+    <smeltable>true</smeltable>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_ChargeRifle</soundInteract>
+    <generateCommonality>0</generateCommonality>
     <statBases>
       <WorkToMake>500</WorkToMake>
       <Mass>3</Mass>
@@ -32,11 +38,16 @@
       <AccuracyMedium>0.99</AccuracyMedium>
       <AccuracyLong>0.99</AccuracyLong>
       <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+      <Flammability>0.0</Flammability>
     </statBases>
     <weaponTags>
       <li>IndustrialAdvanced</li>
       <li>GunSingleUse</li>
     </weaponTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -51,6 +62,32 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>0</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
