@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- ==================== 三级头盔 (Tier 3 Helmet) - 原生版 ==================== -->
-  <!-- 完全对照 LWOP LWApparelArmorHelmetPowerBase 结构 -->
+  <!-- 代码结构对照 LWOP LWApparelArmorHelmetPowerBase，数值保持 CE 版原值 -->
 
   <ThingDef ParentName="ApparelBase">
     <defName>MyMod_Tier3Helmet_Vanilla</defName>
@@ -16,41 +16,33 @@
     <generateCommonality>0</generateCommonality>
     <uiIconScale>1.25</uiIconScale>
 
-    <!-- statBases 对照 LWOP -->
+    <!-- 数值保持 CE 版原值 -->
     <statBases>
-      <WorkToMake>60</WorkToMake>
+      <WorkToMake>1000</WorkToMake>
       <MaxHitPoints>2500</MaxHitPoints>
-      <Mass>0</Mass>
-      <Flammability>0.0</Flammability>
-      <ArmorRating_Sharp>999</ArmorRating_Sharp>
-      <ArmorRating_Blunt>999</ArmorRating_Blunt>
-      <ArmorRating_Heat>999</ArmorRating_Heat>
-      <Insulation_Cold>999</Insulation_Cold>
-      <Insulation_Heat>999</Insulation_Heat>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>200</ArmorRating_Sharp>
+      <ArmorRating_Blunt>200</ArmorRating_Blunt>
+      <ArmorRating_Heat>10</ArmorRating_Heat>
       <EquipDelay>0</EquipDelay>
     </statBases>
 
-    <!-- equippedStatOffsets 对照 LWOP -->
+    <!-- 数值保持 CE 版原值 -->
     <equippedStatOffsets>
-      <ResearchSpeedFactor>999999</ResearchSpeedFactor>
-      <GlobalLearningFactor>999999</GlobalLearningFactor>
-      <HackingSpeed>999999</HackingSpeed>
-      <PruningSpeed>999999</PruningSpeed>
-      <NegotiationAbility>100</NegotiationAbility>
-      <TradePriceImprovement>100</TradePriceImprovement>
-      <SocialImpact>100</SocialImpact>
-      <ConversionPower>100</ConversionPower>
-      <ArrestSuccessChance>100</ArrestSuccessChance>
-      <SuppressionPower>100</SuppressionPower>
-      <TameAnimalChance>100</TameAnimalChance>
-      <TrainAnimalChance>100</TrainAnimalChance>
-      <BondAnimalChanceFactor>100</BondAnimalChanceFactor>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">100</VacuumResistance>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">99</ToxicEnvironmentResistance>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">9999</PsychicEntropyRecoveryRate>
-      <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">9999</MeditationFocusGain>
-      <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.0001</PsychicEntropyGain>
-      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">9999</PsychicEntropyMax>
+      <ResearchSpeedFactor>40</ResearchSpeedFactor>
+      <GlobalLearningFactor>40</GlobalLearningFactor>
+      <HackingSpeed>40</HackingSpeed>
+      <PruningSpeed>40</PruningSpeed>
+      <NegotiationAbility>10</NegotiationAbility>
+      <TradePriceImprovement>10</TradePriceImprovement>
+      <SocialImpact>10</SocialImpact>
+      <ConversionPower>10</ConversionPower>
+      <ArrestSuccessChance>10</ArrestSuccessChance>
+      <SuppressionPower>10</SuppressionPower>
+      <TameAnimalChance>10</TameAnimalChance>
+      <TrainAnimalChance>10</TrainAnimalChance>
+      <BondAnimalChanceFactor>10</BondAnimalChanceFactor>
     </equippedStatOffsets>
 
     <thingCategories>
@@ -70,9 +62,9 @@
         <li>Overhead</li>
       </layers>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</wornGraphicPath>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
+      <tags>
+        <li>IndustrialMilitary</li>
+      </tags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
     </apparel>
 
@@ -103,7 +95,6 @@
     </thingSetMakerTags>
 
     <recipeMaker>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>0</Crafting>
       </skillRequirements>

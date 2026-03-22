@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- ==================== 三级护甲 (Tier 3 Armor) - 原生版 ==================== -->
-  <!-- 完全对照 LWOP lwApparelArmorPowerBase 结构 -->
+  <!-- 代码结构对照 LWOP lwApparelArmorPowerBase，数值保持 CE 版原值 -->
 
   <ThingDef ParentName="ApparelBase">
     <defName>MyMod_Tier3Armor_Vanilla</defName>
@@ -15,50 +15,38 @@
     <techLevel>Spacer</techLevel>
     <generateCommonality>0</generateCommonality>
 
-    <!-- statBases 对照 LWOP -->
+    <!-- 数值保持 CE 版原值 -->
     <statBases>
-      <WorkToMake>60</WorkToMake>
+      <WorkToMake>2000</WorkToMake>
       <MaxHitPoints>4000</MaxHitPoints>
       <Mass>1</Mass>
       <Flammability>0</Flammability>
-      <ArmorRating_Sharp>999</ArmorRating_Sharp>
-      <ArmorRating_Blunt>999</ArmorRating_Blunt>
-      <ArmorRating_Heat>999</ArmorRating_Heat>
-      <Insulation_Cold>999</Insulation_Cold>
-      <Insulation_Heat>999</Insulation_Heat>
+      <ArmorRating_Sharp>200</ArmorRating_Sharp>
+      <ArmorRating_Blunt>200</ArmorRating_Blunt>
+      <ArmorRating_Heat>10</ArmorRating_Heat>
+      <Insulation_Cold>200</Insulation_Cold>
       <EquipDelay>0</EquipDelay>
-      <JumpRange>999</JumpRange>
-      <PackRadius>4.9</PackRadius>
-      <AccuracyTouch>1</AccuracyTouch>
-      <AccuracyShort>1</AccuracyShort>
-      <AccuracyMedium>1</AccuracyMedium>
-      <AccuracyLong>1</AccuracyLong>
-      <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
 
-    <!-- equippedStatOffsets 对照 LWOP -->
+    <!-- 数值保持 CE 版原值 -->
     <equippedStatOffsets>
-      <!-- Biotech 相关 -->
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">100</VacuumResistance>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">100</ToxicEnvironmentResistance>
-      <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">3</MechControlGroups>
-      <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">100</MechBandwidth>
-      <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">9999</WorkSpeedGlobalOffsetMech>
-      <MechRemoteRepairDistance MayRequire="Ludeon.RimWorld.Biotech">9999</MechRemoteRepairDistance>
-      <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">9999</MechFormingSpeed>
-      <MechRemoteShieldDistance MayRequire="Ludeon.RimWorld.Biotech">9999</MechRemoteShieldDistance>
-      <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">9999</MechRemoteShieldEnergy>
-      <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">9999</MechRepairSpeed>
-      <!-- Royalty 相关 -->
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">9999</PsychicEntropyRecoveryRate>
-      <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">9999</MeditationFocusGain>
-      <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.0001</PsychicEntropyGain>
-      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">9999</PsychicEntropyMax>
-      <!-- 通用加成（对照 LWOP 的 30000，按原版比例调整） -->
-      <MoveSpeed>300</MoveSpeed>
-      <WorkSpeedGlobal>50</WorkSpeedGlobal>
-      <CarryingCapacity>1000</CarryingCapacity>
+      <CarryingCapacity>40</CarryingCapacity>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">40</VacuumResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">40</ToxicEnvironmentResistance>
+      <MechControlGroups MayRequire="Ludeon.RimWorld.Biotech">1</MechControlGroups>
+      <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech">40</MechBandwidth>
+      <WorkSpeedGlobalOffsetMech MayRequire="Ludeon.RimWorld.Biotech">400</WorkSpeedGlobalOffsetMech>
+      <MechRemoteRepairDistance MayRequire="Ludeon.RimWorld.Biotech">400</MechRemoteRepairDistance>
+      <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech">400</MechFormingSpeed>
+      <MechRemoteShieldDistance MayRequire="Ludeon.RimWorld.Biotech">400</MechRemoteShieldDistance>
+      <MechRemoteShieldEnergy MayRequire="Ludeon.RimWorld.Biotech">400</MechRemoteShieldEnergy>
+      <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">400</MechRepairSpeed>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">400</PsychicEntropyRecoveryRate>
+      <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">400</MeditationFocusGain>
+      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">400</PsychicEntropyMax>
+      <MoveSpeed>1200</MoveSpeed>
+      <WorkSpeedGlobal>20</WorkSpeedGlobal>
     </equippedStatOffsets>
 
     <thingCategories>
@@ -84,6 +72,9 @@
         <li>Shell</li>
       </layers>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+      <tags>
+        <li>IndustrialMilitary</li>
+      </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
@@ -117,7 +108,6 @@
     </thingSetMakerTags>
 
     <recipeMaker>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>1</Crafting>
       </skillRequirements>
