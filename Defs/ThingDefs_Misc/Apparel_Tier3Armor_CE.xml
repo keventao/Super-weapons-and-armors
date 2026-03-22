@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- ==================== 三级护甲 (Tier 3 Armor) - 原生版 ==================== -->
-    <ThingDef ParentName="ApparelBase">
-        <defName>MyMod_Tier3Armor_Vanilla</defName>
-        <label>Flying Tigers Elite Armor (Vanilla)</label>
-        <description>Elite combat armor from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Features superior mobility and environmental resistance. (Vanilla version)</description>
+    <!-- ==================== 三级护甲 (Tier 3 Armor) ==================== -->
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>MyMod_Tier3Armor</defName>
+        <label>Flying Tigers Elite Armor</label>
+        <description>Elite combat armor from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Features superior mobility and environmental resistance.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -22,6 +22,11 @@
             <Insulation_Cold>200</Insulation_Cold>
             <Insulation_Heat>200</Insulation_Heat>
             <EquipDelay>0</EquipDelay>
+            <AccuracyTouch>1</AccuracyTouch>
+            <AccuracyShort>1</AccuracyShort>
+            <AccuracyMedium>1</AccuracyMedium>
+            <AccuracyLong>1</AccuracyLong>
+            <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
             <DeteriorationRate>0</DeteriorationRate>
         </statBases>
         <costList>
@@ -50,6 +55,7 @@
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
         </apparel>
         <equippedStatOffsets>
             <!-- 携带能力 -->

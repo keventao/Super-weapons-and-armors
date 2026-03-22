@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <!-- ==================== 三级头盔 (Tier 3 Helmet) - 原生版 ==================== -->
-    <ThingDef ParentName="ApparelBase">
-        <defName>MyMod_Tier3Helmet_Vanilla</defName>
-        <label>Flying Tigers Elite Helmet (Vanilla)</label>
-        <description>Elite combat helmet from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Enhanced with advanced materials for maximum defense. (Vanilla version)</description>
+    <!-- ==================== 三级头盔 (Tier 3 Helmet) ==================== -->
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>MyMod_Tier3Helmet</defName>
+        <label>Flying Tigers Elite Helmet</label>
+        <description>Elite combat helmet from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Enhanced with advanced materials for maximum defense.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -22,9 +22,6 @@
         <costList>
             <Steel>1</Steel>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -36,6 +33,7 @@
             <tags>
                 <li>IndustrialMilitary</li>
             </tags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
         </apparel>
         <equippedStatOffsets>
             <ResearchSpeedFactor>40</ResearchSpeedFactor>

@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- 原生版 projectile（无CE时使用） -->
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_FlyingTigersPlasma</defName>
-    <label>plasma bolt</label>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>40</damageAmountBase>
-      <armorPenetrationBase>2.0</armorPenetrationBase>
-      <speed>100</speed>
-    </projectile>
-  </ThingDef>
-
-  <!-- 原生版武器（无CE） -->
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>FT_SuperRifle_Vanilla</defName>
+    <defName>FT_SuperRifle</defName>
     <label>Flying Tigers Super Rifle</label>
-    <description>An experimental directed energy weapon that fires supercharged plasma bolts. (Vanilla version)</description>
+    <description>An experimental directed energy weapon that fires supercharged plasma bolts.</description>
     <techLevel>Spacer</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
@@ -41,7 +28,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_FlyingTigersPlasma</defaultProjectile>
+        <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>80</range>
         <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
