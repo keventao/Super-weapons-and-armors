@@ -47,6 +47,10 @@
       <BondAnimalChanceFactor>10</BondAnimalChanceFactor>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">100</VacuumResistance>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">99</ToxicEnvironmentResistance>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">200</PsychicEntropyRecoveryRate>
+      <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">200</MeditationFocusGain>
+      <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">1</PsychicEntropyGain>
+      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">999</PsychicEntropyMax>
     </equippedStatOffsets>
 
     <thingCategories>
