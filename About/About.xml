@@ -8,32 +8,22 @@
         <li>1.6</li>
     </supportedVersions>
     <modVersion IgnoreIfNoMatchingField="True">1.2.1</modVersion>
-    <description>This mod adds LWOP items with Combat Extended support.
+    <description>This mod adds LWOP-style items with optional Combat Extended support.
 
-Items in this mod are from LWOP Package (https://steamcommunity.com/sharedfiles/filedetails/?id=2012717312).
+Items in this mod are inspired by LWOP Package (https://steamcommunity.com/sharedfiles/filedetails/?id=2012717312).
 
 Current features:
 - Joywire: Permanent mood boost implant
 - HyperVitality Chip: Neural implant that reduces sleep need to 2 hours per day
-- Super Rifle: High-capacity assault rifle (CE compatible)
-- Super Barrett Ammo: Overpowered anti-materiel ammunition for the Super Rifle
-- Flying Tigers Elite Helmet: Elite head protection (200 Sharp/Blunt, 3 Electric armor, 10 Heat armor)
-- Flying Tigers Elite Armor: Elite combat armor (200 Sharp/Blunt, 33 Electric armor, 10 Heat armor)
+- Flying Tigers Super Rifle: High-capacity assault rifle
+- Flying Tigers Elite Helmet: Elite head protection (200 Sharp/Blunt armor)
+- Flying Tigers Elite Armor: Elite combat armor (200 Sharp/Blunt armor)
 
-Bug fixes:
-- Fixed ammo not loading into weapon
-- Added ammo description and type
-- Fixed bullet textures
+This mod works with or without Combat Extended.
+- With CE: CE-specific weapon and armor versions will be used (defNames without suffix)
+- Without CE: Vanilla versions will be used (defNames with _Vanilla suffix)
 
-This mod requires Combat Extended to function.</description>
-    <modDependencies>
-        <li>
-            <packageId>CETeam.CombatExtended</packageId>
-            <displayName>Combat Extended</displayName>
-            <downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended</downloadUrl>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/2882957625</steamWorkshopUrl>
-        </li>
-    </modDependencies>
+This mod is player-only: items will not spawn on NPCs or appear in trader inventories.</description>
     <loadAfter>
         <li>CombatExtended.CombatExtended</li>
     </loadAfter>
