@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- ==================== 三级头盔 (Tier 3 Helmet) ==================== -->
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>MyMod_Tier3Helmet</defName>
+        <label>Flying Tigers Elite Helmet</label>
+        <description>Elite combat helmet from the Flying Tigers unit. Provides exceptional protection against bullets, blunt attacks, and electrical damage. Enhanced with advanced materials for maximum defense.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>1</Mass>
+            <ArmorRating_Sharp>200</ArmorRating_Sharp>
+            <ArmorRating_Blunt>200</ArmorRating_Blunt>
+            <ArmorRating_Electric>3</ArmorRating_Electric>
+            <ArmorRating_Heat>10</ArmorRating_Heat>
+            <EquipDelay>0</EquipDelay>
+        </statBases>
+        <costList>
+            <Steel>1</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</wornGraphicPath>
+            <tags>
+                <li>IndustrialMilitary</li>
+            </tags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+        <equippedStatOffsets>
+            <ResearchSpeedFactor>40</ResearchSpeedFactor>
+            <GlobalLearningFactor>40</GlobalLearningFactor>
+            <HackingSpeed>40</HackingSpeed>
+            <PruningSpeed>40</PruningSpeed>
+            <NegotiationAbility>10</NegotiationAbility>
+            <TradePriceImprovement>10</TradePriceImprovement>
+            <SocialImpact>10</SocialImpact>
+            <ConversionPower>10</ConversionPower>
+            <ArrestSuccessChance>10</ArrestSuccessChance>
+            <SuppressionPower>10</SuppressionPower>
+            <TameAnimalChance>10</TameAnimalChance>
+            <TrainAnimalChance>10</TrainAnimalChance>
+            <BondAnimalChanceFactor>10</BondAnimalChanceFactor>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FabricationBench</li>
+                <li>TableMachining</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+</Defs>
