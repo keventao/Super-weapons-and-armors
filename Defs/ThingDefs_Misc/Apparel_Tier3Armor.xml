@@ -23,9 +23,17 @@
       <Flammability>0</Flammability>
       <ArmorRating_Sharp>200</ArmorRating_Sharp>
       <ArmorRating_Blunt>200</ArmorRating_Blunt>
-      <ArmorRating_Heat>10</ArmorRating_Heat>
+      <ArmorRating_Heat>200</ArmorRating_Heat>
       <Insulation_Cold>200</Insulation_Cold>
+      <Insulation_Heat>200</Insulation_Heat>
       <EquipDelay>0</EquipDelay>
+      <JumpRange>200</JumpRange>
+      <PackRadius>4.9</PackRadius>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
 
@@ -44,6 +52,7 @@
       <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech">400</MechRepairSpeed>
       <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">400</PsychicEntropyRecoveryRate>
       <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">400</MeditationFocusGain>
+      <PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.0001</PsychicEntropyGain>
       <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">400</PsychicEntropyMax>
       <MoveSpeed>1200</MoveSpeed>
       <WorkSpeedGlobal>20</WorkSpeedGlobal>
