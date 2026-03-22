@@ -8,7 +8,7 @@
         <li>1.6</li>
     </supportedVersions>
     <modVersion IgnoreIfNoMatchingField="True">1.2.1</modVersion>
-    <description>This mod adds LWOP-style items with optional Combat Extended support.
+    <description>This mod adds LWOP-style items with Combat Extended support.
 
 Items in this mod are inspired by LWOP Package (https://steamcommunity.com/sharedfiles/filedetails/?id=2012717312).
 
@@ -16,14 +16,12 @@ Current features:
 - Joywire: Permanent mood boost implant
 - HyperVitality Chip: Neural implant that reduces sleep need to 2 hours per day
 - Flying Tigers Super Rifle: High-capacity assault rifle
-- Flying Tigers Elite Helmet: Elite head protection (200 Sharp/Blunt armor)
-- Flying Tigers Elite Armor: Elite combat armor (200 Sharp/Blunt armor)
+- Flying Tigers Elite Helmet: Elite head protection
+- Flying Tigers Elite Armor: Elite combat armor
 
-This mod works with or without Combat Extended.
-- With CE: CE-specific weapon and armor versions will be used (defNames without suffix)
-- Without CE: Vanilla versions will be used (defNames with _Vanilla suffix)
+This version requires Combat Extended to function properly.
 
-This mod is player-only: items will not spawn on NPCs or appear in trader inventories.</description>
+Load Order: Place this mod after Combat Extended in your mod list.</description>
     <loadAfter>
         <li>CombatExtended.CombatExtended</li>
     </loadAfter>
