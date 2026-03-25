@@ -93,6 +93,7 @@
             <li>RewardStandardHighFreq</li>
         </thingSetMakerTags>
         <recipeMaker>
+            <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>0</Crafting>
             </skillRequirements>
