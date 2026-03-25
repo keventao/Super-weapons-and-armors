@@ -82,7 +82,7 @@
             <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">400</PsychicEntropyMax>
             <MoveSpeed>1200</MoveSpeed>
             <WorkSpeedGlobal>20</WorkSpeedGlobal>
-            <CarryingCapacity>40</CarryingCapacity>
+            <CarryingCapacity>500</CarryingCapacity>
         </equippedStatOffsets>
         <colorGenerator Class="ColorGenerator_Options">
             <options>
